@@ -1,0 +1,114 @@
+:root {
+  --color-bg: #ffffff;
+  --color-text: #1a1a1a;
+  --color-muted: #4b5563;
+  --color-accent: #0a2540;
+  --color-accent-light: #1e3a5f;
+  --color-border: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: var(--color-text);
+  background: var(--color-bg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.6;
+}
+
+a {
+  color: var(--color-accent);
+}
+
+a:hover {
+  color: var(--color-accent-light);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-accent);
+  line-height: 1.2;
+}
+
+.hero {
+  padding: 5rem 1.5rem 3rem;
+  text-align: center;
+  background: linear-gradient(180deg, #eef2f8 0%, #ffffff 100%);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.hero .tagline {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: var(--color-muted);
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.content {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  margin: 0 0 1rem;
+}
+
+.section p {
+  margin: 0;
+  color: var(--color-text);
+}
+
+.section ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.section li {
+  margin-bottom: 0.5rem;
+}
+
+.footer {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3rem;
+  text-align: center;
+  color: var(--color-muted);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 3.5rem 1.25rem 2.5rem;
+  }
+
+  .section {
+    padding: 2rem 0;
+  }
+}
